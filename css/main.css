@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 940px;
   }
 }
 
@@ -59,6 +59,8 @@ body {
   margin-top: 50px;
   color: var(--text-color);
   font-family: var(--font-1);
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .container .box p {
@@ -69,12 +71,12 @@ body {
 }
 
 .container .box a {
-  margin-top: 80px;
+  margin-top: 60px;
   text-decoration: none;
   color: var(--text-color);
   border: 1px solid var(--text-color);
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 20px;
   font-family: var(--font-2);
 }
