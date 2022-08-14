@@ -73,12 +73,25 @@ body {
 .container .box a {
   margin-top: 60px;
   text-decoration: none;
-  color: var(--text-color);
   border: 1px solid var(--text-color);
   display: inline-block;
   padding: 15px 30px;
   border-radius: 20px;
   font-family: var(--font-2);
+  font-size: 20px;
+  background-color: var(--text-color);
+}
+
+.container .box.box.orange a {
+  color: var(--bright-orange);
+}
+
+.container .box.cyan a {
+  color: var(--dark-cyan);
+}
+
+.container .box.dark-cyan a {
+  color: var(--very-dark-cyan);
 }
 
 .container .box.orange {
