@@ -1,0 +1,92 @@
+/* Start Global Rules */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --trans-white: hsla(0, 0%, 100%, 0.75);
+  --text-color: hsl(0, 0%, 95%);
+  --font-body: 15px;
+  --font-1: 'Big Shoulders Display', cursive;
+  --font-2: 'Lexend Deca', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-size: var(--font-body);
+}
+
+.container {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* 375 */
+
+/* End Global Rules */
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+@media (max-width: 375px) {
+  .container .content {
+    flex-direction: column;
+  }
+}
+
+.container .box {
+  padding: 50px;
+}
+
+.container .box h1 {
+  margin-top: 50px;
+  color: var(--text-color);
+  font-family: var(--font-1);
+}
+
+.container .box p {
+  margin-top: 50px;
+  font-family: var(--font-2);
+  color: var(--trans-white);
+  line-height: 1.6;
+}
+
+.container .box a {
+  margin-top: 80px;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: var(--font-2);
+}
+
+.container .box.orange {
+  background-color: var(--bright-orange);
+}
+
+.container .box.cyan {
+  background-color: var(--dark-cyan);
+}
+
+.container .box.dark-cyan {
+  background-color: var(--very-dark-cyan);
+}
